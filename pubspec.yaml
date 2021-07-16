@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  toast: ^0.1.5
 
 
 
@@ -34,6 +35,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   intl: ^0.17.0
+  flutter_svg: ^0.22.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -45,6 +48,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 
   fonts:
     - family: OpenSans
@@ -58,12 +62,10 @@ flutter:
         - asset: assent/fonts/Quicksand-Bold.ttf
           weight: 700
 
-
-
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assent/image/1.svg
+    - assent/image/2.svg
+    - assent/image/3.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

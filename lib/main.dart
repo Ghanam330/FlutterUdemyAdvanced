@@ -2,14 +2,16 @@ import 'package:flutte_udemy/bottomnavigation.dart';
 import 'package:flutte_udemy/expanded.dart';
 import 'package:flutte_udemy/gridView__LinearGradient.dart';
 import 'package:flutte_udemy/listview.dart';
+import 'package:flutte_udemy/more_about_ui.dart';
+import 'package:flutte_udemy/on_boarder/main.dart';
 import 'package:flutte_udemy/screen1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+
+void main()  {
   runApp(MyApp());
 }
-
 Color w = Colors.white;
 Color b = Colors.black;
 
@@ -40,9 +42,11 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home:
+      home:OnBoarderScreen(),
 
-BottomNavigationExample(),
+      //MoreUiFlutter(),
+
+// BottomNavigationExample(),
        // Screen1()
       // GridViewExample(),
       // ExpandedExample(),
@@ -55,6 +59,20 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Padding(
+          padding: EdgeInsets.all(7.0),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+              Colors.deepOrangeAccent ,
+              Colors.pink,
+              Colors.deepOrangeAccent,
+              ]
+            ),
+          ),
+        ),
         title: Text(
           'Flutter App ',
           style: TextStyle(color: b,),
