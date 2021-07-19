@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class MoreUiFlutter extends StatelessWidget {
-  const MoreUiFlutter({Key? key}) : super(key: key);
+  const MoreUiFlutter({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

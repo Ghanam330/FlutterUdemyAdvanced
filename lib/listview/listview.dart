@@ -7,8 +7,8 @@ class Info{
   DateTime dateTime;
 
   Info({
-    required this.name,
-    required this.height,
-    required this.dateTime
+    @required this.name,
+    @required this.height,
+    @required this.dateTime
   });
 }

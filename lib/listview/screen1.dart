@@ -1,5 +1,5 @@
 
-import 'package:flutte_udemy/screen2.dart';
+import 'package:flutte_udemy/listview/screen2.dart';
 import 'package:flutter/material.dart';
 
 class Screen1 extends StatelessWidget {

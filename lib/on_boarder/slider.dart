@@ -6,7 +6,7 @@ class SliderPage extends StatelessWidget {
   final String description;
   final String image;
 
-  SliderPage({required this.title, required this.description, required this.image});
+  SliderPage({@required this.title, @required this.description, @required this.image});
 
   @override
   Widget build(BuildContext context) {
